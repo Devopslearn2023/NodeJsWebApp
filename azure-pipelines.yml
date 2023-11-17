@@ -31,7 +31,7 @@ steps:
     rootFolderOrFile: '$(webAppPath)'
     includeRootFolder: false
     archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/functionapp.zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/webapp.zip'
 
 
 - task: AzureWebApp@1
@@ -39,6 +39,6 @@ steps:
     azureSubscription: 'Pay-As-You-Go-Primary(a964f1b4-196d-4cd3-abbc-d19f7b7c3466)'
     appType: 'webApp'
     appName: 'myNodeApp1711'
-    package: '$(Build.ArtifactStagingDirectory)/functionapp.zip'
+    package: '$(Build.ArtifactStagingDirectory)/webapp.zip'
     deploymentMethod: 'auto'
 
