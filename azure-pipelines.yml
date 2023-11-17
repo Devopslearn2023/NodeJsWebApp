@@ -11,7 +11,7 @@ pool:
 
 variables:
   azureSubscription: 'funappSC'  # Replace with your Azure subscription name
-  appName: 'myNodeApp1711'  # Replace with your Azure Function App name
+  appName: 'myNodeApp17111'  # Replace with your Azure Function App name
   resourceGroupName: 'testRG'  # Replace with your Azure Resource Group name
   webAppPath: './' # Replace with the path to your Azure Function code in the repository
 
@@ -38,7 +38,7 @@ steps:
   inputs:
     azureSubscription: 'Pay-As-You-Go-Primary(a964f1b4-196d-4cd3-abbc-d19f7b7c3466)'
     appType: 'webApp'
-    appName: 'myNodeApp1711'
+    appName: 'myNodeApp17111'
     package: '$(Build.ArtifactStagingDirectory)/webapp.zip'
     deploymentMethod: 'auto'
 
