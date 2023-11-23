@@ -32,10 +32,9 @@ steps:
     includeRootFolder: false
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/webapp.zip'
-
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'Pay-As-You-Go-Primary(1)(a964f1b4-196d-4cd3-abbc-d19f7b7c3466)'
+    azureSubscription: 'Pay-As-You-Go-Primary(2)(a964f1b4-196d-4cd3-abbc-d19f7b7c3466)'
     appType: 'webAppLinux'
     appName: 'testwebapp2211'
     package: '$(Build.ArtifactStagingDirectory)/webapp.zip'
